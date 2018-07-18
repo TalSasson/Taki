@@ -1,0 +1,56 @@
+.colorChoice:hover{
+    border: 2px solid black;
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+}
+
+.colorChoice{
+    min-width: 100px;
+    min-height: 100px;
+
+    box-sizing: border-box;
+}
+
+.changeColor .yellow{
+    background: yellow;
+}
+
+.changeColor .blue{
+    background: blue;
+}
+
+.changeColor .green{
+    background: green;
+}
+
+.changeColor .red{
+    background: red;
+}
+
+.changeColor{
+    display: flex;
+    position: absolute;
+    z-index: 1000000;
+    width: 200px;
+    height: 200px;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 32%;
+    transition: opacity 1.5s;
+    opacity: 0;
+}
+
+.title{
+    opacity:0;
+}
+
+.visibleChangeColor{
+    cursor: pointer;
+    opacity: 1;
+}

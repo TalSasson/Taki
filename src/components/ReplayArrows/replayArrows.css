@@ -1,0 +1,78 @@
+.arrowsWrapper{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  width: 100%;
+  opacity: 0;
+}
+
+.arrows{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.8);
+  border-radius: 10px;
+  width: 30%;
+  box-sizing: border-box;
+  padding: 10px 13px;
+}
+
+
+.rightArrow{
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 40px solid darkcyan;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+
+  .rightArrow:hover{
+    transform: translateX(8px);
+  }
+  
+  .leftArrow{
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 40px solid darkcyan;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+
+  .leftArrow:hover{
+    transform: translateX(-8px);
+  }
+
+  .cursorPointer{
+    cursor: pointer;
+  }
+
+  .visible{
+    opacity: 1;
+  }
+
+  .startGame{
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    box-sizing: border;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: whitesmoke;
+    min-width: 100px;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.startGame:hover{
+  transform: scale(1.1) rotate(4deg);
+}
+

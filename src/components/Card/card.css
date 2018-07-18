@@ -1,0 +1,27 @@
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-around;
+    max-width: 115px;    
+    margin: 0px -20px;
+    transition: transform 0.5s;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cardContainer{
+    display: flex;
+    position: relative;
+}
+
+@media only screen and (min-width: 1220px){
+    .cardContainer{
+        align-items: center;
+    }
+
+}

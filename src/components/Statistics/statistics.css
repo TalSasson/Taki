@@ -1,0 +1,19 @@
+.statistics{
+    display: flex;
+    flex-wrap: wrap; 
+    margin-left: 25px;
+}
+
+.statistics .item{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 750px){
+    .statistics{
+        transition: 1s ease;
+        font-size: 15px;
+    }
+}

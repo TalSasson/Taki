@@ -1,0 +1,63 @@
+.endGame{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 5000;
+    width: 400px;
+    height: 300px;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 25%;
+    transition: opacity 1.5s;
+    opacity: 0;
+    background: cornsilk;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.winner{
+    font-size: 40px;
+}
+
+.statistics{
+    display: flex;
+    flex-wrap: wrap; 
+    margin-left: 25px; 
+}
+
+.statistics div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.visibleEndGame{
+    opacity: 1;
+}
+
+.btnWrapper{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-around;
+}
+
+.btnWrapper div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    box-sizing: border;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: whitesmoke;
+    min-width: 100px;
+}
+
+.cursorVisible{
+    cursor: pointer;
+}

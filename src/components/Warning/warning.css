@@ -1,0 +1,26 @@
+.warning{
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    justify-content: center;
+    background: cornsilk;
+    border: 1px solid firebrick;
+    border-radius: 10px;
+    max-width: 270px;
+    padding: 10px;
+    left: 20px;
+    top: 20px;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.visibleWarning{
+    opacity: 1;
+}
+
+@media only screen and (max-width: 1200px){
+    .warning{
+        font-size: 20px;
+    }
+}

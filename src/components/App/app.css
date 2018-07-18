@@ -1,0 +1,26 @@
+.boardWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+} 
+
+.stackWrappers{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blurScreen{
+    filter: blur(4px);
+}
+
+.opacityScreen{
+    opacity: 0.2;
+}
